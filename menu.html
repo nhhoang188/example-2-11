@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<input placeholder="Nhập N là số lẻ dương" type="number" onchange="checkN()" id="input">
+<button id="checkSNT" onclick="check()">Check N</button>
+<button onclick="displayNsnt()">N số nguyên tố đầu</button>
+<button id="nhapmang" onclick="nhapMang()">Nhập Mảng N</button>
+<button  onclick="listprimeOfArray()">Số NT trong arr</button>
+<button  onclick="checkvitri()">N có thuộc arr không?</button>
+<button  onclick="xoaN()">Xoá N khỏi mảng</button>
+<button  onclick="sapXep()">Sắp Xếp Lại Mảng</button>
+<button  onclick="pushX()">Thêm Số X vào Mảng</button>
+<p id="displayarr"></p>
+<p id="2"></p>
+<p id="3"></p>
+<p id="4"></p>
+<p id="5"></p>
+<p id="6"></p>
+<p id="7"></p>
+<p id="8"></p>
+<p id="9"></p>
+<p id="10"></p>
+
+</body>
+<script>
+    let flag =true;
+    let arr=[];
+
+    function checkSNT(number) {
+        this.number = number;
+        if (this.number < 2){
+            return  flag = false;
+        }
+        else{
+            for (let i = 2; i < (this.number)-1; i++)
+            {
+                if (this.number % i === 0){
+                   return  flag = false;
+                }
+            }
+        }
+        return flag=true;
+
+    }
+
+</script>
+<script src="1.js"></script>
+<script src="2.js"></script>
+<script src="3.js"></script>
+<script src="4+5.js"></script>
+<script src="6.js"></script>
+<script src="7.js"></script>
+<script src="8.js"></script>
+<script src="9.js"></script>
+<script src="10.js"></script>
+</html>
